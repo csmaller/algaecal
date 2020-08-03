@@ -9,12 +9,9 @@
       <script charset='ISO-8859-1' src='//fast.wistia.com/assets/external/E-v1.js' async></script>
       <div class='row'>
         <div class='wistia-container text-center'>
-          <h3 class='text-left'>Video</h3>
+          <h3 class='text-left mb-3'>Video</h3>
           <client-only placeholder='Loading...'>
-            <div
-              v-bind:class='`d-inline-block wistia_embed wistia_async_${video.video_id}`'
-              style='height:360px;width:640px; min-height:360px;'
-            >&nbsp;</div>
+              <WistiaPlayer  :video_id="video.video_id"/>
           </client-only>
           <div class='text-left'>
             <VideoDetails :video='video' />
@@ -49,5 +46,9 @@ export default {
 a {
   text-decoration: underline;
   color: #187d61;
+}
+
+.wistia-container h3{
+    color: #187d61;
 }
 </style>
