@@ -5,7 +5,7 @@
         <button name='play'></button>
       </div>
     </nuxt-link>
-    <VideDetails :video='video' />
+    <VideoDetails :video='video' />
   </div>
 </template>
 

@@ -1,8 +1,8 @@
 <template>
-  <div class='video-details mt-3'>
-    <h3>{{video.title}}</h3>
-    <p v-if='video.category'>Category: {{video.category}}</p>
-    <p>{{video.description}}</p>
+  <div class='video-details mt-1 px-1'>
+    <h4>{{video.title}}</h4>
+    <p v-if='video.category'><strong>Category:</strong> {{video.category}}</p>
+    <p class="mt-1">{{video.description}}</p>
   </div>
 </template>
 
@@ -13,7 +13,7 @@ export default {
 </script>
 
 <style scoped>
-.video-details h3 {
+.video-details h4 {
   color: #1d8368;
 }
 
